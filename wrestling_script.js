@@ -1,3 +1,5 @@
+// Created by Ben Templin. For more of my projects check out http://www.bentemplin.me
+
 /* To Do
 team score
 */
