@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title id = "title1"> Wrestling Score App </title>
+	</head>
+	<body>
+
+		<div id = "inputControls"> 
+			<!-- Inputs controls for wrestler names, bout num also has submit, reset, and correct -->
+			<textarea id = 'redWrestler' rows = '1' cols = '20' maxlength="50" placeholder="Red Wrestler" style="resize: none"></textarea>
+			<textarea id = 'greenWrestler' rows = '1' cols = '20' maxlength="50" placeholder="Green Wrestler" style="resize: none"></textarea>
+			<textarea id = 'boutNum' rows = '1' cols = '10' maxlength="5" placeholder="Bout Number" style="resize: none;"></textarea>
+			<button id = "submitWrestler" style = "background-color: white">Submit</button>
+			<button id = "resetMatch" style = "background-color: white">Reset Match</button>
+			<button id = "correct" style = "background-color: white">Correct Items</button>
+			<button id = "lock" style = "background-color: white">Lock Controls</button>
+			<button id = "output" style = "background-color: red">Output: On</button>
+		</div>
+		<div id = "inputButtons">
+			<!-- All of the scoring/match buttons for each wrestler -->
+			<h1 style = "color:red" id = 'redTitle'> Red Wrestler</h1>
+			<button id="redTakedown" style = "height:50px;width:125px;color:red;font-size: 16pt"> Takedown </button>
+			<button id="redEscape" style = "height:50px;width:125px;color:red;font-size: 16pt"> Escape </button>
+			<button id="redReversal" style = "height:50px;width:125px;color:red;font-size: 16pt"> Reversal </button>
+			<button id="redNearFall2" style = "height:50px;width:125px;color:red;font-size: 16pt"> 2 Near Fall </button>
+			<button id="redNearFall3" style = "height:50px;width:125px;color:red;font-size: 16pt"> 3 Near Fall </button>
+			<button id="redStalling" style = "height:50px;width:125px;color:red;font-size: 16pt"> Stalling </button>
+			<button id="redCaution" style = "height:50px;width:125px;color:red;font-size: 16pt"> Caution </button>
+			<button id="redPenalty" style = "height:50px;width:125px;color:red;font-size: 16pt"> Penalty </button>
+			<h1 style = "color:green" id='greenTitle'> Green Wrestler</h1>
+			<button id="greenTakedown" style = "height:50px;width:125px;color:green;font-size:16pt"> Takedown </button>
+			<button id="greenEscape" style = "height:50px;width:125px;color:green;font-size:16pt"> Escape </button>
+			<button id="greenReversal" style = "height:50px;width:125px;color:green;font-size:16pt"> Reversal </button>
+			<button id="greenNearFall2" style = "height:50px;width:125px;color:green;font-size:16pt"> 2 Near Fall </button>
+			<button id="greenNearFall3" style = "height:50px;width:125px;color:green;font-size:16pt"> 3 Near Fall </button>
+			<button id="greenStalling" style = "height:50px;width:125px;color:green;font-size:16pt"> Stalling </button>
+			<button id="greenCaution" style = "height:50px;width:125px;color:green;font-size:16pt"> Caution </button>
+			<button id="greenPenalty" style = "height:50px;width:125px;color:green;font-size:16pt"> Penalty </button>
+		</div>
+		<div id = 'scores'>
+			<!--where all of the scores stuff is-->
+			<h1> Match Score &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Penalties &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Cautions &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Stallings </h1>
+			&nbsp&nbsp&nbsp&nbsp&nbsp
+			<textarea id = "redScore" rows = '1' cols = '2' maxlength = '2' disabled="true" style = "font-size: 24pt;resize: none; color:red"></textarea>
+			&nbsp&nbsp&nbsp&nbsp
+			<textarea id = "greenScore" rows = '1' cols = '2' maxlength = '2' disabled="true" style = "font-size: 24pt;resize: none; color:green"></textarea>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<textarea id = "redPenCount" rows = '1' cols = '2' maxlength = '2' disabled="true" style = "font-size: 24pt;resize: none; color:red"></textarea>
+			&nbsp&nbsp&nbsp&nbsp
+			<textarea id = "greenPenCount" rows = '1' cols = '2' maxlength = '2' disabled="true" style = "font-size: 24pt;resize: none; color:green"></textarea>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<textarea id = "redCautionCount" rows = '1' cols = '2' maxlength = '2' disabled="true" style = "font-size: 24pt;resize: none; color:red"></textarea>
+			&nbsp&nbsp&nbsp&nbsp
+			<textarea id = "greenCautionCount" rows = '1' cols = '2' maxlength = '2' disabled="true" style = "font-size: 24pt;resize: none; color:green"></textarea>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp
+			<textarea id = "redStallCount" rows = '1' cols = '2' maxlength = '2' disabled="true" style = "font-size: 24pt;resize: none; color:red"></textarea>
+			&nbsp&nbsp&nbsp&nbsp
+			<textarea id = "greenStallCount" rows = '1' cols = '2' maxlength = '2' disabled="true" style = "font-size: 24pt;resize: none; color:green"></textarea>
+		</div>
+		<div id = "timeStuff">
+			<h1 id = "timeTitle">Time</h1>
+			<button id = 'period1' style = "background-color:white">Period 1</button>
+			<button id = 'period2' style = "background-color:white">Period 2</button>
+			<button id = 'period3' style = "background-color:white">Period 3</button>
+			<button id = 'overtime' style = "background-color:white">Overtime</button>
+		</div>
+		<div id = "matchEnd">
+			<h1 id='endScenario'>Match End Scenarios</h1>
+			<button id = 'endPoints' style = "background-color:white">End Match on Points</button>
+			<button id = 'redUTB' style = "background-color:white">Red Win by UTB</button>
+			<button id = 'greenUTB' style = "background-color:white">Green Win by UTB</button>
+			<button id = 'redWBF' style = "background-color:white">Red Win by Fall</button>
+			<button id = 'greenWBF' style = "background-color:white">Green Win by Fall</button>
+			<button id = 'redInj' style = "background-color:white">Red Win by Injury Default</button>
+			<button id = 'greenInj' style = "background-color:white">Green Win by Injury Default</button>
+			<button id = 'redDQ' style = "background-color:white">Red Win by DQ</button>
+			<button id = 'greenDQ' style = "background-color:white">Green Win by DQ</button>
+		<script src="wrestling_script.js"></script>
+	</body>
+</html>
