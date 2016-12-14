@@ -21,7 +21,8 @@ var bout_num = '';
 //Initialize Output
 var output = '';
 var outputClick = 0
-var outWindow = window.open()
+var clickCheck = 0
+var outWindow = ''
 //Other variables
 var clickCorrect = 0;
 var clickLock = 0;
@@ -29,22 +30,27 @@ var period = '';
 var endType = '';
 
 // Make the output function
-function matchOutput(message){
-	if (outputClick == 0){
-		outWindow.document.writeln(message + "<br>")
-		output = ''
-	};
-};
 document.getElementById("output").onclick = function(){
+	if (clickCheck == 0){
+		clickCheck += 1
+		outWindow = window.open()
+	};
 	if (outputClick == 1){
-		document.getElementById("output").setAttribute("style", "background-color:red")
-		document.getElementById("output").innerHTML = "Output: On"
+		document.getElementById("output").setAttribute("style", "background-color:white")
+		document.getElementById("output").innerHTML = "Output: Off"
 		outputClick = 0
 	}
 	else if (outputClick == 0){
-		document.getElementById("output").setAttribute("style", "background-color:white")
-		document.getElementById("output").innerHTML = "Output: Off"
+		document.getElementById("output").setAttribute("style", "background-color:red")
+		document.getElementById("output").innerHTML = "Output: On"
 		outputClick = 1
+	};
+};
+
+function matchOutput(message){
+	if (outputClick == 1){
+		outWindow.document.writeln(message + "<br>")
+		output = ''
 	};
 };
 
