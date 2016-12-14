@@ -31,4 +31,4 @@ This button allows the user to disable all buttons on the page. To enable lock m
 ###The Output Button
 This button controls the output page, and is disabled by default. To enable the output page, simply click the button, at which point it will turn red, read "Output: On," and open a new webpage to display the ouputs of the software. At any point during the match, the user can toggle whether the output is on or off, and it will still print updated to the same page. Additionally, resetting the match by using the "Reset Match" button does not affect the page, allowing multiple matches to be recorded to the same output page.
 
-*Note: Refreshing the page will initialize a new output page the next time the output is turned on. Also, resetting the match with the "Reset Match" button does not change whether or not the output was enabled or disabled.
+*Note: Refreshing the page will initialize a new output page the next time the output is turned on. Also, resetting the match with the "Reset Match" button does not change whether or not the output was enabled or disabled.*
