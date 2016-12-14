@@ -104,3 +104,31 @@ This button is used if the Red Wrestler wins by disqualification. This can happe
 
 ###Green Win by DQ
 This button works exactly the same as Red Win by DQ, only for when the Red Wrestler gets disqualified.
+
+##The Output Page
+If enabled, the output page opens a new window where information regarding what happens during the match is recorded. It records things like the bout number; the names of the wrestlers; any points scored; any penalties, cautions, or stallings received during the match; the current score; and the match end scenario.
+
+###Example Output
+>The following represents a sample output to the outputs page.
+>Bout Number 1. Match recap //
+>Period 1:
+>Name 1 (Red Wrestler): takedown, Score = red: 2, green: 0 
+>Name 2 (Green Wrestler): escape, Score = red: 2, green: 1; 
+>Name 2 (Green Wrestler): takedown, Score = red: 2, green: 3; 
+>Name 2 (Green Wrestler): 2 near fall, Score = red: 2, green: 5; 
+>Period 2:
+>Name 1 (Red Wrestler): escape, Score = red: 3, green: 5 
+>Name 2 (Green Wrestler): takedown, Score = red: 3, green: 7; 
+>Name 1 (Red Wrestler): reversal, Score = red: 5, green: 7; 
+>Name 1 (Red Wrestler): 2 near fall, Score = red: 8, green: 7; 
+>Name 1 (Red Wrestler): stalling 1, Score = red: 8, green: 7; 
+>Period 3:
+>Name 2 (Green Wrestler): stalling 1, Score = red: 8, green: 7; 
+>Name 2 (Green Wrestler): caution 1, Score = red: 8, green: 7; 
+>Name 2 (Green Wrestler): caution 2, Score = red: 8, green: 7; 
+>Name 1 (Red Wrestler): penalty, Score = red: 9, green: 7; 
+>Match has ended. Name 1 (Red Wrestler) wins by decision.
+>////////////////////
+
+*__Note: The Output page generates a pop up window. Pop ups must not be blocked for the site for this to work.__*
+*If you are having problems with the pop up page, disable any pop up blockers, refresh the app, and cycle the output to on.*
