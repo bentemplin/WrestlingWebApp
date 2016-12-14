@@ -39,7 +39,7 @@ These buttons are found under the tags "Red Wrestler" and "Green Wrestler" and h
 
 *Note: Each button will only be described once, as the buttons function in exactly the same way for both red and green wrestlers.*
 
-**Unless otherwise noted, the buttons award points to the wrestler of the same color, i.e. if you press the red "Takedown" button, it awards points to the red wrestler**
+**Unless otherwise noted, the buttons award points to the wrestler of the same color, i.e. if you press the red "Takedown" button, it awards points to the red wrestler.**
 
 ###Takedown
 When pressed, this button awards a takedown to the wrestler, which is two points.
