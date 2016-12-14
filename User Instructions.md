@@ -109,7 +109,7 @@ This button works exactly the same as Red Win by DQ, only for when the Red Wrest
 If enabled, the output page opens a new window where information regarding what happens during the match is recorded. It records things like the bout number; the names of the wrestlers; any points scored; any penalties, cautions, or stallings received during the match; the current score; and the match end scenario.
 
 ###Example Output
->The following represents a sample output to the outputs page.  
+The following represents a sample output to the outputs page.  
 >Bout Number 1. Match recap //  
 >Period 1:  
 >Name 1 (Red Wrestler): takedown, Score = red: 2, green: 0   
