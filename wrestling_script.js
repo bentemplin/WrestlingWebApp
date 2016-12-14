@@ -379,7 +379,7 @@ document.getElementById("redNearFall2").onclick = function(){
 
 document.getElementById("redNearFall3").onclick = function(){
 	score_red += 3;
-	output = (red_wrestler + " (Red Wrestler): 2 near fall, Score = red: " + score_red + ", green: " + score_green + "; ");
+	output = (red_wrestler + " (Red Wrestler): 3 near fall, Score = red: " + score_red + ", green: " + score_green + "; ");
 	matchOutput(output)
 	updateScore()
 };

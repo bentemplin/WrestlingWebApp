@@ -66,3 +66,41 @@ When pressed, this button adds a caution to the wrestler. This increments "Cauti
 When pressed, this adds a penalty point to the wrestler, and increments the "Penalties" of the other wrestler by one. This button always awards one point.
 
 *__Note: This app automatically sets the cut of for a technical fall at a 15 point difference, and will automatically end the match once that mark has been reached.__*
+
+##Match Counters
+This section displays the match score, penalty counts, caution counts, and stalling counts for the match. They correspond to their color, i.e. the red score corresponds to the red wrestler. There is not much to interact with in this section unless the app is in correction mode, in which case you can use the boxes to edit scores, etc. 
+
+##Time Controls
+These buttons are located under the Match Counters and allow the user to select which period the match is in. Use of these buttons is optional and they only affect the output page. You will know which period is selected as the button turns to dark gray. All four of these buttons work in the same way, the only difference being the message that is logged to the output page.
+
+##Match End Scenarios
+These buttons govern how the match ends, and will print a match end message to the output page. 
+
+###End Match on Points
+This function determines the winner based on points and will print out a message saying what wrestler won, and if it was a regular decision (win by less than eight points) or a major decision (win by eight to fourteen points). 
+
+*Note: This function will bring up an error message if the match is tied, because wrestling matches cannot end in a tie.*
+
+###Red Win by UTB
+This button is used if the Red Wrestler wins in the Ultimate Tie Breaker overtime. This button will not affect the score of the match, but will indicate how the wrestler won on the output page. 
+
+###Green Win by UTB
+This button works exactly the same as Red Win by UTB, only for the Green Wrestler.
+
+###Red Win by Fall
+This button is used if the Red Wrestler wins by fall (also called a pin or pinfall). It does not reflect the time of the pin at this time. 
+
+###Green Win by Fall
+This button works exactly the same as Red Win by Fall, only for the Green Wreslter.
+
+###Red Win by Injury Default
+This button is used if the Red Wrestler wins by injury default. This should be used when the Green Wrestler is accidentally injured and can no longer wrestle.
+
+###Green Win by Injury Default
+This button works exactly the same as Red Win by Injury Default, only the Green Wrestler wins
+
+###Red Win by DQ
+This button is used if the Red Wrestler wins by disqualification. This can happen several ways. The Green Wrestler can be disqualified for having too many penalties, or the Green Wrestler can be disqualified for injuring the Red Wrestler in the course of an illegal move.
+
+###Green Win by DQ
+This button works exactly the same as Red Win by DQ, only for when the Red Wrestler gets disqualified.
