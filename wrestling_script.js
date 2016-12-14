@@ -363,12 +363,7 @@ document.getElementById("redReversal").onclick = function(){
 
 document.getElementById("redPenalty").onclick = function(){
 	penalty_green += 1;
-	if (penalty_green > 2){
-		score_red += 2
-	}
-	else{
-		score_red += 1
-	};
+	score_red += 1;
 	output = (red_wrestler + " (Red Wrestler): penalty, Score = red: " + score_red + ", green: " + score_green + "; ");
 	matchOutput(output)
 	updateScore();
@@ -442,12 +437,7 @@ document.getElementById("greenReversal").onclick = function(){
 
 document.getElementById("greenPenalty").onclick = function(){
 	penalty_red += 1;
-	if (penalty_red > 2){
-		score_green += 2
-	}
-	else{
-		score_green += 1
-	};
+	score_green += 1;
 	output = (green_wrestler + " (Green Wrestler): penalty, Score = red: " + score_red + ", green: " + score_green + "; ");
 	matchOutput(output)
 	updateScore();

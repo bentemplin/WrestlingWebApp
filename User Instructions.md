@@ -32,3 +32,37 @@ This button allows the user to disable all buttons on the page. To enable lock m
 This button controls the output page, and is disabled by default. To enable the output page, simply click the button, at which point it will turn red, read "Output: On," and open a new webpage to display the ouputs of the software. At any point during the match, the user can toggle whether the output is on or off, and it will still print updated to the same page. Additionally, resetting the match by using the "Reset Match" button does not affect the page, allowing multiple matches to be recorded to the same output page.
 
 *Note: Refreshing the page will initialize a new output page the next time the output is turned on. Also, resetting the match with the "Reset Match" button does not change whether or not the output was enabled or disabled.*
+
+
+##Red and Green Wrestler Score Controls
+These buttons are found under the tags "Red Wrestler" and "Green Wrestler" and have color coded text that corresponds to the wrestler that they control.
+
+*Note: Each button will only be described once, as the buttons function in exactly the same way for both red and green wrestlers.*
+
+**Unless otherwise noted, the buttons award points to the wrestler of the same color, i.e. if you press the red "Takedown" button, it awards points to the red wrestler**
+
+###Takedown
+When pressed, this button awards a takedown to the wrestler, which is two points.
+
+###Escape
+When pressed, this button awards an escape to the wrestler, which is one point.
+
+###Reversal
+When pressed, this button awards a reversal to the wrestler, which is two points.
+
+###2 Near Fall
+When pressed, this button awards two near fall points to the wrestler.
+
+###3 Near Fall
+When pressed, this button awards three near fall points to the wrestler.
+
+###Stalling
+When pressed, this button adds a stalling call to the wrestler. This increments "Stallings" by one, and if there is more than one stalling, awards a point to the other wrestler. Starting with the fourth stalling, this button awards two penalty points to the other wrestler.
+
+###Caution
+When pressed, this button adds a caution to the wrestler. This increments "Cautions" by one, and if there are three or more stalling calls, awards a point to the other wrestler. Starting with the fifth caution, this button awards two penalty points to the other wrestler.
+
+###Penalty
+When pressed, this adds a penalty point to the wrestler, and increments the "Penalties" of the other wrestler by one. This button always awards one point.
+
+*__Note: This app automatically sets the cut of for a technical fall at a 15 point difference, and will automatically end the match once that mark has been reached.__*
