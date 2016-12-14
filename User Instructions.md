@@ -131,4 +131,5 @@ If enabled, the output page opens a new window where information regarding what 
 >////////////////////
 
 *__Note: The Output page generates a pop up window. Pop ups must not be blocked for the site for this to work.__*
+
 *If you are having problems with the pop up page, disable any pop up blockers, refresh the app, and cycle the output to on.*
